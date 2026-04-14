@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `laraditz/tiktok` will be documented in this file
+All notable changes to `matheusm821/tiktok` will be documented in this file
 
 ## 1.1.3 - 2026-03-25
 

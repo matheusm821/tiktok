@@ -1,11 +1,11 @@
-{
-  "name": "laraditz/tiktok",
+﻿{
+  "name": "matheusm821/tiktok",
   "description": "Laravel package for interacting with TikTok API.",
   "keywords": [
     "laraditz",
     "tiktok"
   ],
-  "homepage": "https://github.com/laraditz/tiktok",
+  "homepage": "https://github.com/matheusm821/tiktok",
   "license": "MIT",
   "type": "library",
   "authors": [
