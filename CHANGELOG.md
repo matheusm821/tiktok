@@ -83,7 +83,7 @@ All notable changes to `matheusm821/tiktok` will be documented in this file
 ### Changed
 
 - **BREAKING**: Service provider now publishes migrations instead of auto-loading them
-- Users must run `php artisan vendor:publish --provider="Laraditz\TikTok\TikTokServiceProvider" --tag="migrations"` to publish migrations
+- Users must run `php artisan vendor:publish --provider="Matheusm821\TikTok\TikTokServiceProvider" --tag="migrations"` to publish migrations
 
 ## 1.0.0 - 2025-09-20
 

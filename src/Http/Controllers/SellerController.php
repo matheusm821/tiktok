@@ -1,12 +1,12 @@
 <?php
 
-namespace Laraditz\TikTok\Http\Controllers;
+namespace Matheusm821\TikTok\Http\Controllers;
 
-use Laraditz\TikTok\Models\TiktokAccessToken;
+use Matheusm821\TikTok\Models\TiktokAccessToken;
 use TikTok;
 use Illuminate\Http\Request;
-use Laraditz\TikTok\Models\TiktokShop;
-use Laraditz\TikTok\Exceptions\TikTokException;
+use Matheusm821\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Exceptions\TikTokException;
 
 class SellerController extends Controller
 {

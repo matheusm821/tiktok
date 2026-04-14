@@ -1,14 +1,14 @@
 <?php
 
-namespace Laraditz\TikTok\Tests\Unit;
+namespace Matheusm821\TikTok\Tests\Unit;
 
-use Laraditz\TikTok\Tests\TestCase;
-use Laraditz\TikTok\TikTok;
-use Laraditz\TikTok\Models\TiktokShop;
-use Laraditz\TikTok\Models\TiktokAccessToken;
-use Laraditz\TikTok\Services\AuthService;
-use Laraditz\TikTok\Services\ProductService;
-use Laraditz\TikTok\Services\OrderService;
+use Matheusm821\TikTok\Tests\TestCase;
+use Matheusm821\TikTok\TikTok;
+use Matheusm821\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Models\TiktokAccessToken;
+use Matheusm821\TikTok\Services\AuthService;
+use Matheusm821\TikTok\Services\ProductService;
+use Matheusm821\TikTok\Services\OrderService;
 use LogicException;
 use BadMethodCallException;
 

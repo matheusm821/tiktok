@@ -1,11 +1,11 @@
 <?php
 
-namespace Laraditz\TikTok\Facades;
+namespace Matheusm821\TikTok\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Laraditz\TikTok\Skeleton\SkeletonClass
+ * @see \Matheusm821\TikTok\Skeleton\SkeletonClass
  */
 class TikTok extends Facade
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Laraditz\TikTok\Tests\Unit\Services;
+namespace Matheusm821\TikTok\Tests\Unit\Services;
 
-use Laraditz\TikTok\Tests\TestCase;
-use Laraditz\TikTok\TikTok;
-use Laraditz\TikTok\Services\ProductService;
+use Matheusm821\TikTok\Tests\TestCase;
+use Matheusm821\TikTok\TikTok;
+use Matheusm821\TikTok\Services\ProductService;
 use Illuminate\Support\Facades\Http;
 
 class ProductServiceTest extends TestCase
@@ -26,7 +26,7 @@ class ProductServiceTest extends TestCase
 
     public function test_product_service_extends_base_service()
     {
-        $this->assertInstanceOf(\Laraditz\TikTok\Services\BaseService::class, $this->service);
+        $this->assertInstanceOf(\Matheusm821\TikTok\Services\BaseService::class, $this->service);
     }
 
     public function test_can_call_product_list_method()

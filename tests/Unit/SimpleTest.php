@@ -1,11 +1,11 @@
 <?php
 
-namespace Laraditz\TikTok\Tests\Unit;
+namespace Matheusm821\TikTok\Tests\Unit;
 
-use Laraditz\TikTok\Tests\TestCase;
-use Laraditz\TikTok\TikTok;
-use Laraditz\TikTok\Models\TiktokShop;
-use Laraditz\TikTok\Models\TiktokAccessToken;
+use Matheusm821\TikTok\Tests\TestCase;
+use Matheusm821\TikTok\TikTok;
+use Matheusm821\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Models\TiktokAccessToken;
 use Illuminate\Support\Facades\Http;
 
 class SimpleTest extends TestCase
@@ -34,7 +34,7 @@ class SimpleTest extends TestCase
     {
         $tiktok = new TikTok();
         $authService = $tiktok->auth();
-        $this->assertInstanceOf(\Laraditz\TikTok\Services\AuthService::class, $authService);
+        $this->assertInstanceOf(\Matheusm821\TikTok\Services\AuthService::class, $authService);
     }
 
     public function test_http_mocking_works()

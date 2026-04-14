@@ -1,9 +1,9 @@
 <?php
 
-namespace Laraditz\TikTok\Tests;
+namespace Matheusm821\TikTok\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Laraditz\TikTok\TikTokServiceProvider;
+use Matheusm821\TikTok\TikTokServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase
@@ -27,7 +27,7 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageAliases($app)
     {
         return [
-            'TikTok' => \Laraditz\TikTok\Facades\TikTok::class,
+            'TikTok' => \Matheusm821\TikTok\Facades\TikTok::class,
         ];
     }
 
@@ -52,7 +52,7 @@ abstract class TestCase extends BaseTestCase
 
     protected function createTikTokShop(array $attributes = [])
     {
-        return \Laraditz\TikTok\Models\TiktokShop::create(array_merge([
+        return \Matheusm821\TikTok\Models\TiktokShop::create(array_merge([
             'id' => 'test_shop_id',
             'code' => 'test_shop_code',
             'name' => 'Test Shop',
@@ -66,9 +66,9 @@ abstract class TestCase extends BaseTestCase
     {
         $shop = isset($attributes['subjectable_id']) ? null : $this->createTikTokShop();
 
-        return \Laraditz\TikTok\Models\TiktokAccessToken::create(array_merge([
+        return \Matheusm821\TikTok\Models\TiktokAccessToken::create(array_merge([
             'subjectable_id' => $shop?->id ?? $attributes['subjectable_id'],
-            'subjectable_type' => \Laraditz\TikTok\Models\TiktokShop::class,
+            'subjectable_type' => \Matheusm821\TikTok\Models\TiktokShop::class,
             'access_token' => 'test_access_token',
             'refresh_token' => 'test_refresh_token',
             'expires_at' => now()->addDays(7),

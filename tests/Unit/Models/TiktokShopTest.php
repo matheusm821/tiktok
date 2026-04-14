@@ -1,10 +1,10 @@
 <?php
 
-namespace Laraditz\TikTok\Tests\Unit\Models;
+namespace Matheusm821\TikTok\Tests\Unit\Models;
 
-use Laraditz\TikTok\Tests\TestCase;
-use Laraditz\TikTok\Models\TiktokShop;
-use Laraditz\TikTok\Models\TiktokAccessToken;
+use Matheusm821\TikTok\Tests\TestCase;
+use Matheusm821\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Models\TiktokAccessToken;
 
 class TiktokShopTest extends TestCase
 {

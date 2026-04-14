@@ -18,7 +18,7 @@
             </div>
 
             @foreach($accessTokens as $accessToken)
-                @if($accessToken->subjectable && $accessToken->subjectable instanceof \Laraditz\TikTok\Models\TiktokShop)
+                @if($accessToken->subjectable && $accessToken->subjectable instanceof \Matheusm821\TikTok\Models\TiktokShop)
                     <div class="section">
                         <h2>{{ __('Shop Information') }}</h2>
                         <div class="item">

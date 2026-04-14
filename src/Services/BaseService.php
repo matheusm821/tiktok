@@ -1,17 +1,17 @@
 <?php
 
-namespace Laraditz\TikTok\Services;
+namespace Matheusm821\TikTok\Services;
 
 use BadMethodCallException;
 use Illuminate\Http\Client\RequestException;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
-use Laraditz\TikTok\Events\TikTokRequestFailed;
-use Laraditz\TikTok\Exceptions\TikTokAPIError;
-use Laraditz\TikTok\Jobs\RemoveMissingProducts;
-use Laraditz\TikTok\Models\TiktokRequest;
-use Laraditz\TikTok\TikTok;
+use Matheusm821\TikTok\Events\TikTokRequestFailed;
+use Matheusm821\TikTok\Exceptions\TikTokAPIError;
+use Matheusm821\TikTok\Jobs\RemoveMissingProducts;
+use Matheusm821\TikTok\Models\TiktokRequest;
+use Matheusm821\TikTok\TikTok;
 use LogicException;
 
 class BaseService
@@ -337,7 +337,7 @@ class BaseService
     protected function getUrl(): string
     {
         if (
-            $this instanceof \Laraditz\TikTok\Services\AuthService
+            $this instanceof \Matheusm821\TikTok\Services\AuthService
             && in_array($this->getMethodName(), ['accessToken', 'refreshToken', 'refreshAccessToken'])
         ) {
             $base_url = config('tiktok.auth_url');

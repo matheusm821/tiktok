@@ -1,13 +1,13 @@
 <?php
 
-namespace Laraditz\TikTok\Services;
+namespace Matheusm821\TikTok\Services;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
-use Laraditz\TikTok\Models\TiktokEventWebhook;
-use Laraditz\TikTok\Models\TiktokRequest;
-use Laraditz\TikTok\Exceptions\TikTokTokenException;
+use Matheusm821\TikTok\Models\TiktokEventWebhook;
+use Matheusm821\TikTok\Models\TiktokRequest;
+use Matheusm821\TikTok\Exceptions\TikTokTokenException;
 
 class EventService extends BaseService
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraditz\TikTok\Http\Controllers;
+namespace Matheusm821\TikTok\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

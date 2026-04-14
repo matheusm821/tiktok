@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraditz\TikTok\Exceptions;
+namespace Matheusm821\TikTok\Exceptions;
 
 use Exception;
 use Throwable;

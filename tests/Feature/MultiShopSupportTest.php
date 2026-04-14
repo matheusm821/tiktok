@@ -1,11 +1,11 @@
 <?php
 
-namespace Laraditz\TikTok\Tests\Feature;
+namespace Matheusm821\TikTok\Tests\Feature;
 
-use Laraditz\TikTok\Tests\TestCase;
-use Laraditz\TikTok\TikTok;
-use Laraditz\TikTok\Models\TiktokShop;
-use Laraditz\TikTok\Models\TiktokAccessToken;
+use Matheusm821\TikTok\Tests\TestCase;
+use Matheusm821\TikTok\TikTok;
+use Matheusm821\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Models\TiktokAccessToken;
 use Illuminate\Support\Facades\Http;
 
 class MultiShopSupportTest extends TestCase

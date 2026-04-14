@@ -1,4 +1,4 @@
-﻿# Laravel TikTok
+# Laravel TikTok
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/matheusm821/tiktok.svg?style=flat-square)](https://packagist.org/packages/matheusm821/tiktok)
 [![Total Downloads](https://img.shields.io/packagist/dt/matheusm821/tiktok.svg?style=flat-square)](https://packagist.org/packages/matheusm821/tiktok)
@@ -61,7 +61,7 @@ TIKTOK_SHOP_NAME=your_shop_name_here      # Optional: Default shop name
 You can publish the migration file via this command:
 
 ```bash
-php artisan vendor:publish --provider="Laraditz\TikTok\TikTokServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Matheusm821\TikTok\TikTokServiceProvider" --tag="migrations"
 ```
 
 ### 4. Run Migration
@@ -79,7 +79,7 @@ This creates tables for shops, access tokens, requests, webhooks, orders, and re
 Publish the configuration file if you need to customize settings:
 
 ```bash
-php artisan vendor:publish --provider="Laraditz\TikTok\TikTokServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Matheusm821\TikTok\TikTokServiceProvider" --tag="config"
 ```
 
 ### 6. Authorization Flow
@@ -166,7 +166,7 @@ Full parameters refer to [API documentation](https://partner.tiktokshop.com/docv
 ### Basic Usage
 
 ```php
-use Laraditz\TikTok\Facades\TikTok;
+use Matheusm821\TikTok\Facades\TikTok;
 
 // Using facade (recommended)
 $shops = TikTok::seller()->shops();
@@ -298,7 +298,7 @@ $orders = $tiktok->order()->list(/* ... */);
 ### Error Handling
 
 ```php
-use Laraditz\TikTok\Exceptions\TikTokAPIError;
+use Matheusm821\TikTok\Exceptions\TikTokAPIError;
 
 try {
     $products = TikTok::product()->list(
@@ -331,8 +331,8 @@ This package provides events that you can listen to in your application:
 
 | Event                                        | Description                              |
 | -------------------------------------------- | ---------------------------------------- |
-| `Laraditz\TikTok\Events\WebhookReceived`     | Triggered when TikTok sends webhook data |
-| `Laraditz\TikTok\Events\TikTokRequestFailed` | Triggered when API request fails         |
+| `Matheusm821\TikTok\Events\WebhookReceived`     | Triggered when TikTok sends webhook data |
+| `Matheusm821\TikTok\Events\TikTokRequestFailed` | Triggered when API request fails         |
 
 ### Creating Event Listeners
 
@@ -344,7 +344,7 @@ Create listeners for these events in your application:
 
 namespace App\Listeners;
 
-use Laraditz\TikTok\Events\WebhookReceived;
+use Matheusm821\TikTok\Events\WebhookReceived;
 
 class TikTokWebhookListener
 {
@@ -377,10 +377,10 @@ Register the listener in your `EventServiceProvider` (Laravel 10 and below):
 ```php
 // app/Providers/EventServiceProvider.php
 protected $listen = [
-    \Laraditz\TikTok\Events\WebhookReceived::class => [
+    \Matheusm821\TikTok\Events\WebhookReceived::class => [
         \App\Listeners\TikTokWebhookListener::class,
     ],
-    \Laraditz\TikTok\Events\TikTokRequestFailed::class => [
+    \Matheusm821\TikTok\Events\TikTokRequestFailed::class => [
         \App\Listeners\TikTokRequestFailedListener::class,
     ],
 ];
@@ -494,7 +494,7 @@ Enable debug logging by listening to the `TikTokRequestFailed` event:
 
 ```php
 // In your EventServiceProvider
-use Laraditz\TikTok\Events\TikTokRequestFailed;
+use Matheusm821\TikTok\Events\TikTokRequestFailed;
 
 protected $listen = [
     TikTokRequestFailed::class => [

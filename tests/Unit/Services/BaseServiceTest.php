@@ -1,13 +1,13 @@
 <?php
 
-namespace Laraditz\TikTok\Tests\Unit\Services;
+namespace Matheusm821\TikTok\Tests\Unit\Services;
 
-use Laraditz\TikTok\Tests\TestCase;
-use Laraditz\TikTok\TikTok;
-use Laraditz\TikTok\Services\BaseService;
-use Laraditz\TikTok\Services\ProductService;
-use Laraditz\TikTok\Models\TiktokRequest;
-use Laraditz\TikTok\Exceptions\TikTokAPIError;
+use Matheusm821\TikTok\Tests\TestCase;
+use Matheusm821\TikTok\TikTok;
+use Matheusm821\TikTok\Services\BaseService;
+use Matheusm821\TikTok\Services\ProductService;
+use Matheusm821\TikTok\Models\TiktokRequest;
+use Matheusm821\TikTok\Exceptions\TikTokAPIError;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Client\Response;
 use BadMethodCallException;
@@ -186,7 +186,7 @@ class BaseServiceTest extends TestCase
 
     public function test_service_generates_correct_url_for_auth_service()
     {
-        $authService = new \Laraditz\TikTok\Services\AuthService($this->tiktok);
+        $authService = new \Matheusm821\TikTok\Services\AuthService($this->tiktok);
 
         // Use reflection to access protected methods and properties
         $reflection = new \ReflectionClass($authService);

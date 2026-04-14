@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraditz\TikTok;
+namespace Matheusm821\TikTok;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;

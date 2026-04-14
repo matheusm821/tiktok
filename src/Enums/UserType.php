@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraditz\TikTok\Enums;
+namespace Matheusm821\TikTok\Enums;
 
 enum UserType: int
 {

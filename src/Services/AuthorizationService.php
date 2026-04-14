@@ -1,11 +1,11 @@
 <?php
 
-namespace Laraditz\TikTok\Services;
+namespace Matheusm821\TikTok\Services;
 
 
-use Laraditz\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Models\TiktokShop;
 use Illuminate\Database\Eloquent\Builder;
-use Laraditz\TikTok\Models\TiktokRequest;
+use Matheusm821\TikTok\Models\TiktokRequest;
 
 class AuthorizationService extends BaseService
 {

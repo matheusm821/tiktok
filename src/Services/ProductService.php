@@ -1,12 +1,12 @@
 <?php
 
-namespace Laraditz\TikTok\Services;
+namespace Matheusm821\TikTok\Services;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
-use Laraditz\TikTok\Models\TiktokProduct;
-use Laraditz\TikTok\Models\TiktokRequest;
-use Laraditz\TikTok\Models\TiktokProductSku;
+use Matheusm821\TikTok\Models\TiktokProduct;
+use Matheusm821\TikTok\Models\TiktokRequest;
+use Matheusm821\TikTok\Models\TiktokProductSku;
 
 class ProductService extends BaseService
 {

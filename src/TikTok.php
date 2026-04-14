@@ -1,9 +1,9 @@
 <?php
 
-namespace Laraditz\TikTok;
+namespace Matheusm821\TikTok;
 
-use Laraditz\TikTok\Models\TiktokAccessToken;
-use Laraditz\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Models\TiktokAccessToken;
+use Matheusm821\TikTok\Models\TiktokShop;
 use LogicException;
 use BadMethodCallException;
 use Illuminate\Support\Arr;
@@ -83,7 +83,7 @@ class TikTok
         if (in_array($property_name, $this->services)) {
             $reformat_property_name = ucfirst(Str::camel($method));
 
-            $service_name = 'Laraditz\\TikTok\\Services\\' . $reformat_property_name . 'Service';
+            $service_name = 'Matheusm821\\TikTok\\Services\\' . $reformat_property_name . 'Service';
 
             return new $service_name(tiktok: $this);
         } else {

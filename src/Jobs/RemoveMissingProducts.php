@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraditz\TikTok\Jobs;
+namespace Matheusm821\TikTok\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -8,9 +8,9 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\DB;
-use Laraditz\TikTok\Models\TiktokProduct;
-use Laraditz\TikTok\Models\TiktokProductSku;
-use Laraditz\TikTok\Models\TiktokRequest;
+use Matheusm821\TikTok\Models\TiktokProduct;
+use Matheusm821\TikTok\Models\TiktokProductSku;
+use Matheusm821\TikTok\Models\TiktokRequest;
 
 class RemoveMissingProducts implements ShouldQueue
 {

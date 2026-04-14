@@ -25,12 +25,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Laraditz\\TikTok\\": "src"
+      "Matheusm821\\TikTok\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Laraditz\\TikTok\\Tests\\": "tests"
+      "Matheusm821\\TikTok\\Tests\\": "tests"
     }
   },
   "scripts": {
@@ -43,10 +43,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Laraditz\\TikTok\\TikTokServiceProvider"
+        "Matheusm821\\TikTok\\TikTokServiceProvider"
       ],
       "aliases": {
-        "TikTok": "Laraditz\\TikTok\\Facades\\TikTok"
+        "TikTok": "Matheusm821\\TikTok\\Facades\\TikTok"
       }
     }
   }

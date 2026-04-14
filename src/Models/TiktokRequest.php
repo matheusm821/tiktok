@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraditz\TikTok\Models;
+namespace Matheusm821\TikTok\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;

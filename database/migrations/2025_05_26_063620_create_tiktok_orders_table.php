@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Schema;
-use Laraditz\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Models\TiktokShop;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 

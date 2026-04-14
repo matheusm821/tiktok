@@ -1,8 +1,8 @@
 <?php
 
-namespace Laraditz\TikTok\Models;
+namespace Matheusm821\TikTok\Models;
 
-use Laraditz\TikTok\Enums\UserType;
+use Matheusm821\TikTok\Enums\UserType;
 use Illuminate\Database\Eloquent\Model;
 
 class TiktokAccessToken extends Model

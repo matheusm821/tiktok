@@ -1,16 +1,16 @@
 <?php
 
-namespace Laraditz\TikTok\Services;
+namespace Matheusm821\TikTok\Services;
 
 use TikTok;
 use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
-use Laraditz\TikTok\Models\TiktokShop;
-use Laraditz\TikTok\Models\TiktokRequest;
-use Laraditz\TikTok\Models\TiktokAccessToken;
-use Laraditz\TikTok\Exceptions\TikTokTokenException;
+use Matheusm821\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Models\TiktokRequest;
+use Matheusm821\TikTok\Models\TiktokAccessToken;
+use Matheusm821\TikTok\Exceptions\TikTokTokenException;
 
 class AuthService extends BaseService
 {

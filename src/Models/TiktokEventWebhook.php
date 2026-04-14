@@ -1,8 +1,8 @@
 <?php
 
-namespace Laraditz\TikTok\Models;
+namespace Matheusm821\TikTok\Models;
 
-use Laraditz\TikTok\Models\TiktokShop;
+use Matheusm821\TikTok\Models\TiktokShop;
 use Illuminate\Database\Eloquent\Model;
 
 class TiktokEventWebhook extends Model

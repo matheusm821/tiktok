@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Laraditz\TikTok\Models\TiktokProduct;
+use Matheusm821\TikTok\Models\TiktokProduct;
 
 return new class extends Migration {
     /**

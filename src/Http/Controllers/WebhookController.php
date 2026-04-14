@@ -1,15 +1,15 @@
 <?php
 
-namespace Laraditz\TikTok\Http\Controllers;
+namespace Matheusm821\TikTok\Http\Controllers;
 
 use TikTok;
 use Illuminate\Http\Request;
-use Laraditz\TikTok\Enums\EventType;
-use Laraditz\TikTok\Models\TiktokOrder;
-use Laraditz\TikTok\Models\TiktokWebhook;
-use Laraditz\TikTok\Events\WebhookReceived;
-use Laraditz\TikTok\Models\TiktokReturnOrder;
-use Laraditz\TikTok\Exceptions\TikTokException;
+use Matheusm821\TikTok\Enums\EventType;
+use Matheusm821\TikTok\Models\TiktokOrder;
+use Matheusm821\TikTok\Models\TiktokWebhook;
+use Matheusm821\TikTok\Events\WebhookReceived;
+use Matheusm821\TikTok\Models\TiktokReturnOrder;
+use Matheusm821\TikTok\Exceptions\TikTokException;
 
 class WebhookController extends Controller
 {

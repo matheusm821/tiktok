@@ -1,11 +1,11 @@
 <?php
 
-namespace Laraditz\TikTok\Console;
+namespace Matheusm821\TikTok\Console;
 
 use TikTok;
 use Illuminate\Console\Command;
-use Laraditz\TikTok\Models\TiktokAccessToken;
-use Laraditz\TikTok\Exceptions\TikTokAPIError;
+use Matheusm821\TikTok\Models\TiktokAccessToken;
+use Matheusm821\TikTok\Exceptions\TikTokAPIError;
 
 class RefreshTokenCommand extends Command
 {

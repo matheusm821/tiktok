@@ -1,12 +1,12 @@
 <?php
 
-namespace Laraditz\TikTok\Tests\Integration;
+namespace Matheusm821\TikTok\Tests\Integration;
 
-use Laraditz\TikTok\Tests\TestCase;
-use Laraditz\TikTok\TikTok;
-use Laraditz\TikTok\Models\TiktokRequest;
-use Laraditz\TikTok\Events\TikTokRequestFailed;
-use Laraditz\TikTok\Exceptions\TikTokAPIError;
+use Matheusm821\TikTok\Tests\TestCase;
+use Matheusm821\TikTok\TikTok;
+use Matheusm821\TikTok\Models\TiktokRequest;
+use Matheusm821\TikTok\Events\TikTokRequestFailed;
+use Matheusm821\TikTok\Exceptions\TikTokAPIError;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Event;
 

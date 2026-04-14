@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraditz\TikTok\Events;
+namespace Matheusm821\TikTok\Events;
 
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Foundation\Events\Dispatchable;

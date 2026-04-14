@@ -1,9 +1,9 @@
 <?php
 
-namespace Laraditz\TikTok\Console;
+namespace Matheusm821\TikTok\Console;
 
 use Illuminate\Console\Command;
-use Laraditz\TikTok\Models\TiktokAccessToken;
+use Matheusm821\TikTok\Models\TiktokAccessToken;
 
 class FlushExpiredTokenCommand extends Command
 {
